@@ -6,17 +6,17 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* --------------------
+      header style 
+-------------------- */
+
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 30px 120px;
 }
-
-/* --------------------
-      header style 
--------------------- */
-
 nav>ul{
     display: flex;
 }
@@ -38,16 +38,16 @@ nav>ul>li>a{
 /* -----------------------
     main section style 
 ------------------------ */
-.container .journey h1{
+.container>.journey>h1{
     font-weight: bold;
     font-size: 52px;
     margin: 10px 0;
 }
-.container .journey p{
+.container>.journey>p{
     font-weight: 600;
     font-size: 16px;
 }
-.container .journey button{
+.container>.journey>button{
     padding: 10px 24px;
     width: 196px;
     height: 44px;
@@ -60,17 +60,17 @@ nav>ul>li>a{
 .container .journey button:hover{
     transform: scale(1.2);
 }
-button i{
+button>i{
     margin-left: 22px;
 }
-.journey-img img{
+.journey-img>img{
     width: 440px;
     background-image: url(image/images/Circle\ design.svg);
     background-size: cover;
     background-repeat: no-repeat;
     transition: 1s;
 }
-.journey-img img:hover{
+.journey-img>img:hover{
     transform: scale(1.1);
 }
 hr{
@@ -107,6 +107,7 @@ hr{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 14px;
     margin: 0 20px;
+    border-radius: 5px;
 }
 .grid img {
     width: 300px;
@@ -114,17 +115,26 @@ hr{
 }
 .rating{
     display: flex;
+    align-items: center;
+}
+.filled{
+    color: goldenrod;
+}
+.empty{
+    color: gray;
 }
 .rating p{
     margin: 0 10px;
 }
+
+
 .right-anchor p{
   text-align: right;
   margin-right: 140px;
 }
 .right-anchor a{
     text-decoration: none;
-    color: #9e165a;
+    color: #E02C6D;
     font-weight: bold;
 }
 
@@ -201,6 +211,7 @@ hr{
     header nav{
         display: block;
         font-size: 14px;
+        margin-right: 28px;
     }
     .journey{
         text-align: center;
@@ -236,6 +247,9 @@ hr{
     }
     .contact-class h4{
         margin-left: 25%;
+    }
+    .form-part button{
+        width: 179px;
     }
 }
 

@@ -146,6 +146,14 @@ hr{
     color: white;
     padding: 5px;
 }
+.form-part button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #243f2f;
+    color: white;
+}
 
 
 /* -------------------
@@ -187,7 +195,7 @@ hr{
         margin: 0;
     }
     header h1{
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
     }
     header nav{
@@ -199,6 +207,7 @@ hr{
     }
     .journey p{
         text-align: justify;
+        padding: 0 25px;
     }
     .journey-img img{
         width: 220px;

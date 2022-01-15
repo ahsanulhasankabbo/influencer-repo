@@ -1,14 +1,22 @@
+/* ----------------------
+      default style
+----------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
 }
-
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 30px 120px;
 }
+
+/* --------------------
+      header style 
+-------------------- */
+
 nav>ul{
     display: flex;
 }
@@ -25,6 +33,11 @@ nav>ul>li>a{
     text-decoration: none;
     color: #000;
 }
+
+
+/* -----------------------
+    main section style 
+------------------------ */
 .container .journey h1{
     font-weight: bold;
     font-size: 52px;
@@ -77,6 +90,10 @@ hr{
     transform: scale(1.2);
 }
 
+
+/* ------------------
+    grid section 
+------------------- */
 #grid-id{
     flex-direction: column;
 }
@@ -110,6 +127,11 @@ hr{
     color: #9e165a;
     font-weight: bold;
 }
+
+
+/* ------------------------
+    contact part style 
+------------------------ */
 #contact-part {
     display: flex;
     justify-content: space-between;
@@ -124,6 +146,11 @@ hr{
     color: white;
     padding: 5px;
 }
+
+
+/* -------------------
+      footer style 
+-------------------- */
 #footer-id{
     flex-direction: column;
     background-color: #0f0f2b;
@@ -144,18 +171,25 @@ hr{
     margin: 10px;
     font-size: 20px;
 }
+
+
+/* -------------------
+     media quary 
+-------------------- */
+
+/* -------------------
+    mobile view 
+--------------------- */
 @media only screen and (max-width:767px) {
     .container{
         flex-direction: column;
         width: 100%;
         margin: 0;
     }
-
     header h1{
         font-size: 16px;
         text-align: center;
     }
-
     header nav{
         display: block;
         font-size: 14px;
@@ -195,11 +229,38 @@ hr{
         margin-left: 25%;
     }
 }
-@media only screen and(min-width:768px) and (max-width:1023px){
+
+/* --------------------
+     tablet view 
+--------------------- */
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .container .journey h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .journey{
+        text-align: center;
+    }
+    .journey p{
+        text-align: justify;
+    }
+    .journey-img img {
+        width: 400px;
+        margin: 30px 0;
+    }
     .all-sides{
-        background-color: red;
         display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .grid-section{
         grid-template-columns: repeat(2,1fr);
     }
-    
+    .right-anchor p {
+        margin-right: 20px;
+    }
 }

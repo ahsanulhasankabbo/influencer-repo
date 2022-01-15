@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 120px;
+}
+nav>ul{
+    display: flex;
+}
+nav>ul>li{
+    list-style: none;
+    margin-right: 20px;
+    
+}
+nav>ul>i{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #000;
+}
+.container .journey h1{
+    font-weight: bold;
+    font-size: 52px;
+    margin: 10px 0;
+}
+.container .journey p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.container .journey button{
+    padding: 10px 24px;
+    width: 196px;
+    height: 44px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    color: white;
+    border: none;
+    transition: 1s;
+}
+.container .journey button:hover{
+    transform: scale(1.2);
+}
+button i{
+    margin-left: 22px;
+}
+.journey-img img{
+    width: 440px;
+    background-image: url(image/images/Circle\ design.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.journey-img img:hover{
+    transform: scale(1.1);
+}
+hr{
+    margin: 0 120px;
+}
+.all-sides{
+    display: flex;
+    justify-content: center;
+}
+.all-sides img{
+    width: 84px;
+    height: 26px;
+    margin: 30px 40px;
+    transition: 1s;
+}
+.all-sides img:hover{
+    transform: scale(1.2);
+}
+
+#grid-id{
+    flex-direction: column;
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.grid-section .grid{
+    
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 14px;
+    margin: 0 20px;
+}
+.grid img {
+    width: 300px;
+    height: 256px;
+}
+.rating{
+    display: flex;
+}
+.rating p{
+    margin: 0 10px;
+}
+.right-anchor p{
+  text-align: right;
+  margin-right: 140px;
+}
+.right-anchor a{
+    text-decoration: none;
+    color: #9e165a;
+    font-weight: bold;
+}
+#contact-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+    background-color: #13291c;
+    margin-top: 40px;
+    color: white;
+}
+#contact-part input{
+    background-color: #243f2f;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+#footer-id{
+    flex-direction: column;
+    background-color: #0f0f2b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.footer-text h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.footer-text p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+.footer-icon i{
+    margin: 10px;
+    font-size: 20px;
+}
+@media only screen and (max-width:767px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    header h1{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    header nav{
+        display: block;
+        font-size: 14px;
+    }
+    .journey{
+        text-align: center;
+    }
+    .journey p{
+        text-align: justify;
+    }
+    .journey-img img{
+        width: 220px;
+        margin-top: 40px;
+    }
+    .container .journey h1{
+        font-size: 20px;
+        margin: 0;
+    }
+    .all-sides{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-heading{
+        text-align: center;
+    }
+    .grid-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .right-anchor p{
+        margin-right: 20px;
+    }
+    #contact-part{
+       flex-direction: column;
+       padding: 10px;
+    }
+    .contact-class h4{
+        margin-left: 25%;
+    }
+}
+@media only screen and(min-width:768px) and (max-width:1023px){
+    .all-sides{
+        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
